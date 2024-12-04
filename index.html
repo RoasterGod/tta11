@@ -1,89 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open URL in New Tab (School-Friendly)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-        }
-        input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            margin: 10px 0;
-            border: 2px solid #ddd;
-            border-radius: 4px;
-        }
-        input[type="button"] {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        input[type="button"]:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Open URL in New Tab (School-Friendly)</h1>
-        <p>Enter the URL you want to visit:</p>
-        <input type="text" id="url" placeholder="Enter website URL">
-        <br>
-        <input type="button" value="Open" onclick="openInNewTab()">
-    </div>
+<html><head>
+        <title>Tta11.yaha.buzz - Censor Dodge 1.83 BETA</title>
+        <link rel="stylesheet" type="text/css" href="https://tta11.yaha.buzz/plugins/surf/includes/stylesheet.css">
+	<meta name="viewport" content="width=650">
+    <style type="text/css" id="ctre_styles">
+			#ctre_wnd {
+				position: fixed; bottom: 0; right: 10px;
+				background: #fff; box-shadow: 0px 0px 40px rgba(0,0,0,0.15);
+				border-radius: 3px 3px 0 0;
+				z-index: 2147483647;
+			}
 
-    <script>
-        function openInNewTab() {
-            var url = document.getElementById('url').value;
+			@media (prefers-color-scheme: dark) {
+				#ctre_wnd { background: #000; box-shadow: 0px 0px 40px rgba(255,255,255,0.15); }
+			}
+			</style></head>
 
-            // Check if the URL is valid
-            if (url) {
-                // Add protocol if missing (http:// or https://)
-                if (!url.startsWith('http://') && !url.startsWith('https://')) {
-                    url = 'http://' + url;
-                }
+    <body>
+        <div id="background"></div>
+        <div id="proxySettings" style="display:none;">
+            <span onclick="document.getElementById('proxySettings').style.display = 'none';" style="cursor:pointer; float: right;">X</span>
+            <h2 style="margin-top:0; margin-bottom:14px;">Proxy Settings:</h2>
+            <div>
+                <form style="margin-bottom:5px;" action="https://tta11.yaha.buzz/" method="POST"><span style="padding-right:20px;"><input type="checkbox" checked="" name="encryptURLs" value="1"> Encrypt URLs</span><span style="padding-right:20px;"><input type="checkbox" checked="" name="allowCookies" value="1"> Allow Cookies</span><span style="padding-right:20px;"><input type="checkbox" name="stripJS" value=""> Remove Javascript</span><span style="padding-right:20px;"><input type="checkbox" name="stripObjects" value=""> Remove Objects</span><br><input style="margin-top: 19px;" type="submit" name="updateSettings" value="Update Settings"><input style="margin-left: 5px;" type="submit" value="Reset" name="resetSettings"></form>            </div>
+        </div>
 
-                // Try to open a new tab and set its location to the URL
-                var newTab = window.open('about:blank', '_blank');
+        <div id="recentlyViewed" style="display:none;">
+            <span onclick="document.getElementById('recentlyViewed').style.display = 'none';" style="cursor:pointer; float: right;">X</span>
+                        <h2 style="margin-top:0; margin-bottom:14px;">Pages Viewed Today (Total - 25169 By 77 Users):</h2>
+            <div id="tableParent" style="max-height: 500px; overflow-y: auto;"><table><thead><tr><td><b>Website</b></td><td><b>View Count</b></td></tr></thead><tbody><tr><td style="padding-right: 80px;">ydc1wes.me</td><td>65</td></tr><tr><td style="padding-right: 80px;">xvideos.com</td><td>46</td></tr><tr><td style="padding-right: 80px;">xvideos-cdn.com</td><td>1056</td></tr><tr><td style="padding-right: 80px;">tjk-njk.com</td><td>31</td></tr><tr><td style="padding-right: 80px;">pornhub.com</td><td>38</td></tr><tr><td style="padding-right: 80px;">phncdn.com</td><td>360</td></tr><tr><td style="padding-right: 80px;">trafficjunky.com</td><td>129</td></tr><tr><td style="padding-right: 80px;">trafficjunky.net</td><td>11</td></tr><tr><td style="padding-right: 80px;">googletagmanager.com</td><td>214</td></tr><tr><td style="padding-right: 80px;">youtube.com</td><td>274</td></tr><tr><td style="padding-right: 80px;">ytimg.com</td><td>24</td></tr><tr><td style="padding-right: 80px;">linkedin.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">licdn.com</td><td>14</td></tr><tr><td style="padding-right: 80px;">google.com</td><td>419</td></tr><tr><td style="padding-right: 80px;">googleadservices.com</td><td>22</td></tr><tr><td style="padding-right: 80px;">gstatic.com</td><td>448</td></tr><tr><td style="padding-right: 80px;">googleapis.com</td><td>368</td></tr><tr><td style="padding-right: 80px;">chosun.com</td><td>103</td></tr><tr><td style="padding-right: 80px;">cloudflare.com</td><td>26</td></tr><tr><td style="padding-right: 80px;">contentsfeed.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">google-analytics.com</td><td>10</td></tr><tr><td style="padding-right: 80px;">dable.io</td><td>2</td></tr><tr><td style="padding-right: 80px;">censordodge.com</td><td>188</td></tr><tr><td style="padding-right: 80px;">googlesyndication.com</td><td>64</td></tr><tr><td style="padding-right: 80px;">roblox.com</td><td>25</td></tr><tr><td style="padding-right: 80px;">rbxcdn.com</td><td>951</td></tr><tr><td style="padding-right: 80px;">now.gg</td><td>438</td></tr><tr><td style="padding-right: 80px;">debugbear.com</td><td>12</td></tr><tr><td style="padding-right: 80px;">cdn.now.gg</td><td>247</td></tr><tr><td style="padding-right: 80px;">calculatorsoup.com</td><td>19</td></tr><tr><td style="padding-right: 80px;">wikipedia.org</td><td>66</td></tr><tr><td style="padding-right: 80px;">wikimedia.org</td><td>75</td></tr><tr><td style="padding-right: 80px;">calculator.net</td><td>3</td></tr><tr><td style="padding-right: 80px;">cloudfront.net</td><td>58</td></tr><tr><td style="padding-right: 80px;">doubleclick.net</td><td>25</td></tr><tr><td style="padding-right: 80px;">freeforx.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">minecraftforfreex.com</td><td>50</td></tr><tr><td style="padding-right: 80px;">jquery.com</td><td>20</td></tr><tr><td style="padding-right: 80px;">bootstrapcdn.com</td><td>64</td></tr><tr><td style="padding-right: 80px;">discord.com</td><td>57</td></tr><tr><td style="padding-right: 80px;">website-files.com</td><td>67</td></tr><tr><td style="padding-right: 80px;">localizeapi.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">discordapp.com</td><td>14</td></tr><tr><td style="padding-right: 80px;">youporn.com</td><td>9</td></tr><tr><td style="padding-right: 80px;">crazygames.com</td><td>1483</td></tr><tr><td style="padding-right: 80px;">tiktok.com</td><td>19</td></tr><tr><td style="padding-right: 80px;">tiktokcdn-us.com</td><td>176</td></tr><tr><td style="padding-right: 80px;">tiktokcdn.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">play-cs.com</td><td>3</td></tr><tr><td style="padding-right: 80px;">privacy-mgmt.com</td><td>24</td></tr><tr><td style="padding-right: 80px;">about.google</td><td>32</td></tr><tr><td style="padding-right: 80px;">orbsrv.com</td><td>11</td></tr><tr><td style="padding-right: 80px;">allporncomic.com</td><td>387</td></tr><tr><td style="padding-right: 80px;">widgetlogic.org</td><td>3</td></tr><tr><td style="padding-right: 80px;">tapioni.com</td><td>58</td></tr><tr><td style="padding-right: 80px;">gravatar.com</td><td>54</td></tr><tr><td style="padding-right: 80px;">sexkomix2.com</td><td>1152</td></tr><tr><td style="padding-right: 80px;">o333o.com</td><td>12</td></tr><tr><td style="padding-right: 80px;">yandex.ru</td><td>12</td></tr><tr><td style="padding-right: 80px;">holahupa.com</td><td>24</td></tr><tr><td style="padding-right: 80px;">hentaiera.com</td><td>317</td></tr><tr><td style="padding-right: 80px;">hentai.as</td><td>76</td></tr><tr><td style="padding-right: 80px;">waust.at</td><td>11</td></tr><tr><td style="padding-right: 80px;">mysexgamer.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">ahacdn.me</td><td>14</td></tr><tr><td style="padding-right: 80px;">amung.us</td><td>10</td></tr><tr><td style="padding-right: 80px;">tynt.com</td><td>11</td></tr><tr><td style="padding-right: 80px;">reddit.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">thehentaiworld.com</td><td>20</td></tr><tr><td style="padding-right: 80px;">comicporn.xxx</td><td>34</td></tr><tr><td style="padding-right: 80px;">pemsrv.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">magsrv.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">imhentai.xxx</td><td>46</td></tr><tr><td style="padding-right: 80px;">thatpervert.com</td><td>57</td></tr><tr><td style="padding-right: 80px;">hentairox.com</td><td>117</td></tr><tr><td style="padding-right: 80px;">imkirh.com</td><td>23</td></tr><tr><td style="padding-right: 80px;">ktkjmp.com</td><td>9</td></tr><tr><td style="padding-right: 80px;">bullionglidingscuttle.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">jads.co</td><td>4</td></tr><tr><td style="padding-right: 80px;">luscious.net</td><td>354</td></tr><tr><td style="padding-right: 80px;">jsdelivr.net</td><td>15</td></tr><tr><td style="padding-right: 80px;">tsyndicate.com</td><td>33</td></tr><tr><td style="padding-right: 80px;">rule34.us</td><td>23</td></tr><tr><td style="padding-right: 80px;">trulysuitedcharges.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">isolatedovercomepasted.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">appointeeivyspongy.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">exosrv.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">bankingbloatedcaptive.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">trmzum.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">xnxx.com</td><td>10</td></tr><tr><td style="padding-right: 80px;">xnxx-cdn.com</td><td>111</td></tr><tr><td style="padding-right: 80px;">ypncdn.com</td><td>93</td></tr><tr><td style="padding-right: 80px;">ovh.net</td><td>12</td></tr><tr><td style="padding-right: 80px;">faphouse.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">rtalabel.org</td><td>43</td></tr><tr><td style="padding-right: 80px;">flixcdn.com</td><td>63</td></tr><tr><td style="padding-right: 80px;">statcounter.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">traffichaus.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">cam2cams.co</td><td>1</td></tr><tr><td style="padding-right: 80px;">atsptp.com</td><td>5</td></tr><tr><td style="padding-right: 80px;">mmcdn.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">zrmtrm.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">mat6tube.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">nmcorp.video</td><td>36</td></tr><tr><td style="padding-right: 80px;">pvvstream.pro</td><td>170</td></tr><tr><td style="padding-right: 80px;">eunow4u.com</td><td>7</td></tr><tr><td style="padding-right: 80px;">exporntoons.net</td><td>29</td></tr><tr><td style="padding-right: 80px;">noodlemagazine.com</td><td>12</td></tr><tr><td style="padding-right: 80px;">hpyjmp.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">strpst.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">thecomicboard.com</td><td>21</td></tr><tr><td style="padding-right: 80px;">btloader.com</td><td>8</td></tr><tr><td style="padding-right: 80px;">dns-finder.com</td><td>8</td></tr><tr><td style="padding-right: 80px;">ad-delivery.net</td><td>18</td></tr><tr><td style="padding-right: 80px;">svscomics.com</td><td>15</td></tr><tr><td style="padding-right: 80px;">fastpic.org</td><td>1</td></tr><tr><td style="padding-right: 80px;">archiveofourown.org</td><td>25</td></tr><tr><td style="padding-right: 80px;">fandom.com</td><td>10</td></tr><tr><td style="padding-right: 80px;">nocookie.net</td><td>29</td></tr><tr><td style="padding-right: 80px;">fastly-insights.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">comicartfans.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">fontawesome.com</td><td>48</td></tr><tr><td style="padding-right: 80px;">b-cdn.net</td><td>31</td></tr><tr><td style="padding-right: 80px;">ebayimg.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">heritagestatic.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">zproxy.org</td><td>1</td></tr><tr><td style="padding-right: 80px;">fanfiction.net</td><td>1</td></tr><tr><td style="padding-right: 80px;">hentaiforce.net</td><td>16</td></tr><tr><td style="padding-right: 80px;">hentaiforce.me</td><td>105</td></tr><tr><td style="padding-right: 80px;">hentai-foundry.com</td><td>47</td></tr><tr><td style="padding-right: 80px;">qnp16tstw.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">hdporncomics.com</td><td>8</td></tr><tr><td style="padding-right: 80px;">realsrv.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">stripchat.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">flibusta.is</td><td>7</td></tr><tr><td style="padding-right: 80px;">cairn.info</td><td>2</td></tr><tr><td style="padding-right: 80px;">captcha-delivery.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">geforce.now</td><td>4</td></tr><tr><td style="padding-right: 80px;">snokido.com</td><td>751</td></tr><tr><td style="padding-right: 80px;">wgplayer.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">bing.com</td><td>3</td></tr><tr><td style="padding-right: 80px;">geforcenow.com</td><td>45</td></tr><tr><td style="padding-right: 80px;">tbg95.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">github.io</td><td>34</td></tr><tr><td style="padding-right: 80px;">firebaseapp.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">googleusercontent.com</td><td>151</td></tr><tr><td style="padding-right: 80px;">poki.com</td><td>469</td></tr><tr><td style="padding-right: 80px;">poki-cdn.com</td><td>4680</td></tr><tr><td style="padding-right: 80px;">cloudflareinsights.com</td><td>65</td></tr><tr><td style="padding-right: 80px;">poki.io</td><td>58</td></tr><tr><td style="padding-right: 80px;">fortnite.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">afternic.com</td><td>22</td></tr><tr><td style="padding-right: 80px;">wsimg.com</td><td>12</td></tr><tr><td style="padding-right: 80px;">Interstellar.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">interstellar.com</td><td>52</td></tr><tr><td style="padding-right: 80px;">stats.wp.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">i0.wp.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">tyronesunblockedgames.com</td><td>16</td></tr><tr><td style="padding-right: 80px;">cdn-image.com</td><td>42</td></tr><tr><td style="padding-right: 80px;">freegames.onl</td><td>2</td></tr><tr><td style="padding-right: 80px;">smashkarts.io</td><td>46</td></tr><tr><td style="padding-right: 80px;">adinplay.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">fastly.net</td><td>2</td></tr><tr><td style="padding-right: 80px;">vntsm.io</td><td>2</td></tr><tr><td style="padding-right: 80px;">coolmathgames.com</td><td>1771</td></tr><tr><td style="padding-right: 80px;">visualwebsiteoptimizer.com</td><td>25</td></tr><tr><td style="padding-right: 80px;">mathplayground.com</td><td>31</td></tr><tr><td style="padding-right: 80px;">revcatch.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">admetricspro.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">kidsafeseal.com</td><td>3</td></tr><tr><td style="padding-right: 80px;">protectsubrev.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">webcontentassessor.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">thepizzaedition.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">parkingcrew.net</td><td>2</td></tr><tr><td style="padding-right: 80px;">baseball9.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">baseball9.io</td><td>800</td></tr><tr><td style="padding-right: 80px;">gamedistribution.com</td><td>25</td></tr><tr><td style="padding-right: 80px;">52.71.55.40</td><td>6</td></tr><tr><td style="padding-right: 80px;">computers-science.com</td><td>59</td></tr><tr><td style="padding-right: 80px;">flatjeep.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">googlevideo.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">survive.io</td><td>4</td></tr><tr><td style="padding-right: 80px;">spotify.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">fortnite.gg</td><td>68</td></tr><tr><td style="padding-right: 80px;">vntsm.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">yaha.buzz</td><td>9</td></tr><tr><td style="padding-right: 80px;">bugsnag.com</td><td>96</td></tr><tr><td style="padding-right: 80px;">vercel.app</td><td>34</td></tr><tr><td style="padding-right: 80px;">gostudymath.com</td><td>32</td></tr><tr><td style="padding-right: 80px;">cms-cdn.now.gg</td><td>124</td></tr><tr><td style="padding-right: 80px;">redtube.com</td><td>158</td></tr><tr><td style="padding-right: 80px;">rdtcdn.com</td><td>2646</td></tr><tr><td style="padding-right: 80px;">intergi.com</td><td>6</td></tr><tr><td style="padding-right: 80px;">drifthunters2.io</td><td>29</td></tr><tr><td style="padding-right: 80px;">escaperoad.io</td><td>5</td></tr><tr><td style="padding-right: 80px;">azgames.io</td><td>6</td></tr><tr><td style="padding-right: 80px;">1games.io</td><td>24</td></tr><tr><td style="padding-right: 80px;">facebook.net</td><td>4</td></tr><tr><td style="padding-right: 80px;">facebook.com</td><td>3</td></tr><tr><td style="padding-right: 80px;">hoodamath.com</td><td>16</td></tr><tr><td style="padding-right: 80px;">1v1.lol</td><td>2</td></tr><tr><td style="padding-right: 80px;">instagram.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">cdninstagram.com</td><td>13</td></tr><tr><td style="padding-right: 80px;">Roblox.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">sthree.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">bluestacks.com</td><td>10</td></tr><tr><td style="padding-right: 80px;">schoolcheats.net</td><td>64</td></tr><tr><td style="padding-right: 80px;">tiktoker.win</td><td>1</td></tr><tr><td style="padding-right: 80px;">truex.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">typekit.net</td><td>7</td></tr><tr><td style="padding-right: 80px;">ipinfo.io</td><td>1</td></tr><tr><td style="padding-right: 80px;">1v1.school</td><td>3</td></tr><tr><td style="padding-right: 80px;">coolserving.com</td><td>3</td></tr><tr><td style="padding-right: 80px;">minoplres.xyz</td><td>18</td></tr><tr><td style="padding-right: 80px;">imego.lat</td><td>3</td></tr><tr><td style="padding-right: 80px;">durhamgeo.com</td><td>69</td></tr><tr><td style="padding-right: 80px;">codespark.com</td><td>10</td></tr><tr><td style="padding-right: 80px;">twitter.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">amazonaws.com</td><td>14</td></tr><tr><td style="padding-right: 80px;">mxpnl.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">thefoos.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">beginlearning.io</td><td>2</td></tr><tr><td style="padding-right: 80px;">mixpanel.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">oyunskor.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">snailthreatenedinvited.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">unpkg.com</td><td>4</td></tr><tr><td style="padding-right: 80px;">nvidia.com</td><td>20</td></tr><tr><td style="padding-right: 80px;">cookielaw.org</td><td>1</td></tr><tr><td style="padding-right: 80px;">adobedtm.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">unblockedgames.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">xbox.com</td><td>148</td></tr><tr><td style="padding-right: 80px;">microsoft.com</td><td>45</td></tr><tr><td style="padding-right: 80px;">akamaized.net</td><td>4</td></tr><tr><td style="padding-right: 80px;">s-microsoft.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">xboxservices.com</td><td>9</td></tr><tr><td style="padding-right: 80px;">mem.gfx.ms</td><td>1</td></tr><tr><td style="padding-right: 80px;">visualstudio.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">app.com</td><td>10</td></tr><tr><td style="padding-right: 80px;">brandmetrics.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">adsafeprotected.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">amazon-adsystem.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">confiant-integrations.net</td><td>1</td></tr><tr><td style="padding-right: 80px;">taboola.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">coolmathgames.app</td><td>1</td></tr><tr><td style="padding-right: 80px;">gmsgroup.app</td><td>185</td></tr><tr><td style="padding-right: 80px;">switchblade.xyz</td><td>3</td></tr><tr><td style="padding-right: 80px;">moonlight.gg</td><td>4</td></tr><tr><td style="padding-right: 80px;">freegames.org</td><td>1</td></tr><tr><td style="padding-right: 80px;">cutercounter.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">media-amazon.com</td><td>1</td></tr><tr><td style="padding-right: 80px;">pervmom.com</td><td>2</td></tr><tr><td style="padding-right: 80px;">psmcdn.net</td><td>7</td></tr><tr><td style="padding-right: 80px;">mylfcdn.net</td><td>2</td></tr><tr><td style="padding-right: 80px;">porn.com</td><td>171</td></tr><tr><td style="padding-right: 80px;">oduwow.com</td><td>3</td></tr></tbody></table></div>        </div>
 
-                if (newTab) {
-                    // New tab was successfully opened, set the URL
-                    newTab.document.write('<html><head><title>Loading...</title></head><body><h1>Loading...</h1></body></html>');
-                    newTab.document.close();  // Close the document after writing
-
-                    // Set the location to the URL after a brief loading message
-                    setTimeout(function() {
-                        newTab.location.href = url;
-                    }, 1000); // Delay to ensure tab is fully opened
-                } else {
-                    alert("Pop-up blocker detected! Please disable it to continue.");
-                }
-            } else {
-                alert('Please enter a valid URL!');
-            }
-        }
-    </script>
-</body>
-</html>
+        <div id="container">
+            <a href="https://roastergod.github.io/tta11" id="header">RoasterGod</a>
+            <div id="textbox">
+                <script>function goToPage() { event.preventDefault(); var URL = document.getElementsByName('cdURL')[0].value; if (URL!='') { window.location = '?cdURL=' + btoa(URL); } }</script>                <form action="#" method="GET" onsubmit="goToPage();">
+                    <input id="box" type="text" name="cdURL" value="" placeholder="URL" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    <input id="button" type="submit" value="Go!">
+                </form>
+            </div>
+            <div id="options">
+                <table style="width:100%;">
+                    <tbody><tr>
+                        <td><a onclick="document.getElementById('proxySettings').style.display = 'block';" style="cursor:pointer; color:#000; text-decoration: none;">Proxy Settings</a></td>
+                        <td><a onclick="document.getElementById('recentlyViewed').style.display = 'block';" style="position: relative;left: 17%;cursor:pointer; color:#000; text-decoration: none; text-align:center;">Recently Viewed</a></td>
+                        <td>
+                            <a href="?clearCookies" style="color:#000; text-decoration: none; float:right;">Clear Cookies</a>                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+        <div id="poweredby">Powered By <a href="https://roastergod.github.io/tta11" target="blank">https://roastergod.github.io/tta11</a></div>
+    
+</body></html>
