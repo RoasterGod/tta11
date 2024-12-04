@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unblocked Browser Proxy</title>
+    <title>Open URL in New Tab (About Blank)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,22 +47,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Access Blocked Websites</h1>
-        <p>Enter the URL of the website you want to visit:</p>
+        <h1>Open URL in New Tab (About Blank)</h1>
+        <p>Enter the URL you want to visit:</p>
         <input type="text" id="url" placeholder="Enter website URL">
         <br>
-        <input type="button" value="Go" onclick="openWebsite()">
+        <input type="button" value="Open" onclick="openInNewTab()">
     </div>
 
     <script>
-        function openWebsite() {
+        function openInNewTab() {
             var url = document.getElementById('url').value;
+            
+            // Check if the URL is valid
             if (url) {
-                // Add protocol if not present
+                // Add protocol if missing (http:// or https://)
                 if (!url.startsWith('http://') && !url.startsWith('https://')) {
                     url = 'http://' + url;
                 }
-                window.open(url, '_blank');
+
+                // Open a new tab with about:blank
+                var newTab = window.open('about:blank', '_blank');
+                
+                // Wait for the new tab to fully load, then set the location to the requested URL
+                newTab.document.write('<html><head><title>Loading...</title></head><body><h1>Loading...</h1></body></html>');
+                newTab.document.close();
+                
+                // Once the tab is ready, set its location to the URL entered
+                newTab.location.href = url;
             } else {
                 alert('Please enter a valid URL!');
             }
